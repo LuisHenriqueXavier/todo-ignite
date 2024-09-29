@@ -1,0 +1,20 @@
+.wrapper {
+    height: auto; /* Define a altura como automática, permitindo que o conteúdo determine a altura */
+    width: 765px; /* Largura fixa de 765 pixels */
+    max-width: 46rem; /* Largura máxima de 46 rem para responsividade */
+    margin: 2rem auto; /* Margem superior e inferior de 2rem; centraliza horizontalmente */
+    padding: 0 1rem; /* Padding de 1rem nas laterais */
+
+    display: flex; /* Ativa o layout flexbox para a wrapper */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+
+    margin-top: calc(0px - 1.6875rem); /* Ajusta a margem superior usando cálculo */
+}
+
+.wrapper .item {
+    background-color: lightcoral; /* Cor de fundo para os itens (cor clara) */
+    display: flex; /* Permite o uso de flexbox para o item */
+    align-items: center; /* Centraliza verticalmente o conteúdo do item */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do item */
+    border: 1px solid #ccc; /* Borda de 1 pixel com cor cinza clara para visualização */
+}

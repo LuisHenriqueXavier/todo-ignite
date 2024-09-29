@@ -1,0 +1,50 @@
+.newTask {
+    height: 54px; /* Define a altura do contêiner da nova tarefa */
+    display: flex; /* Define o layout como flexbox para alinhar itens horizontalmente */
+    align-items: center; /* Mantém o botão e o input na mesma linha verticalmente */
+    gap: 0.5rem; /* Adiciona espaço entre o botão e o input */
+    flex-grow: 1; /* Permite que o contêiner expanda para ocupar o espaço restante disponível */
+}
+
+.newTask .submitButton {
+    height: 54px; /* Define a altura do botão de envio */
+    display: flex; /* Permite o uso de flexbox para alinhar o conteúdo dentro do botão */
+    padding: 1rem 1rem; /* Adiciona espaço interno ao botão */
+    background-color: var(--blue-dark); /* Define a cor de fundo do botão */
+    color: var(--gray-100); /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+    gap: 0.5rem; /* Adiciona espaço entre os ícones e o texto no botão */
+    align-items: center; /* Alinha o conteúdo do botão verticalmente ao centro */
+}
+
+.newTask .submitButton:hover {
+    background: var(--blue); /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+}
+
+.newTask .submitButton h1 {
+    font-size: 0.875rem; /* Define o tamanho da fonte do texto dentro do botão */
+}
+
+.newTask .inputTask {
+    flex-grow: 1; /* Faz o input ocupar todo o espaço disponível restante */
+    padding: 8px; /* Adiciona espaço interno ao input */
+    border: 1px solid var(--gray-700); /* Define a cor da borda do input */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao input */
+    font-size: 16px; /* Define o tamanho da fonte do texto no input */
+    width: 100%; /* Remove qualquer largura fixa para que o input se expanda */
+    height: 100%; /* Define a altura do input como 100% da altura do contêiner pai */
+    padding: 1rem; /* Adiciona espaço interno ao input */
+    background: var(--gray-500); /* Define a cor de fundo do input */
+    color: var(--gray-300); /* Define a cor do texto no input */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.newTask .inputTask:focus {
+    background-color: var(--gray-500); /* Mantém a cor de fundo ao focar no input */
+    color: var(--gray-100); /* Altera a cor do texto ao focar no input */
+    border-color: var(--purple-dark); /* Muda a cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do navegador ao focar */
+}

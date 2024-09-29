@@ -1,0 +1,108 @@
+/* Estilo para o contêiner principal da lista de tarefas */
+.taskList {
+    height: auto; /* Altura automática para o contêiner */
+}
+
+/* Estilo para o contêiner que exibe a mensagem de "nenhuma tarefa" */
+.taskList .noTask {
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    flex-direction: column;    
+    align-items: center;       
+    justify-content: center;   
+    height: 300px; /* Altura fixa para a mensagem */
+    width: 100%; /* Largura total do contêiner */
+    border-top: solid 1px var(--gray-300); /* Define uma borda superior sólida de 1 pixel com a cor definida na variável --gray-300 */
+    border-radius: 10px; /* Aplica um raio de borda de 10 pixels, arredondando os cantos do elemento */
+
+}
+
+/* Estilo para o título da seção "nenhuma tarefa" */
+.taskList .noTask h1 {
+    font-weight: bold; /* Negrito para o título */
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Estilo para o parágrafo de descrição */
+.taskList .noTask p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Estilos gerais para o checkbox (div que simula o checkbox) */
+.checkbox {
+    width: 20px; /* Largura do checkbox */
+    height: 20px; /* Altura do checkbox */
+    margin-right: 20px; /* Espaçamento à direita */
+    display: inline-block; /* Para aplicar o background-image corretamente */
+    background-size: cover; /* Garante que a imagem cubra todo o contêiner */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Checkbox não marcado (estado padrão) */
+.checkbox.unchecked {
+    background-image: url('../assets/Checkbox.svg'); /* SVG para não marcado */
+}
+
+/* Checkbox não marcado com hover (passar o mouse) */
+.checkbox.unchecked:hover {
+    background-image: url('../assets/Checkbox-Hover.svg'); /* SVG para hover não marcado */
+}
+
+/* Checkbox marcado */
+.checkbox.checked {
+    background-image: url('../assets/Checked.svg'); /* SVG para marcado */
+}
+
+/* Checkbox marcado com hover */
+.checkbox.checked:hover {
+    background-image: url('../assets/Checked-Hover.svg'); /* SVG para hover marcado */
+}
+
+/* Estilo para riscar o texto quando a tarefa está concluída */
+.completedTask {
+    text-decoration: line-through; /* Riscar o texto */
+    color: var(--gray-300); /* Cor opcional para o texto riscado */
+}
+
+/* Estilos para os itens da lista de tarefas */
+.taskItem {
+    color: var(--gray-100);
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: space-between; /* Mantém o texto e checkbox à esquerda e o botão à direita */
+    margin: 10px 0px; /* Margem vertical entre os itens */
+    padding: 10px; /* Padding interno */
+    background-color: var(--gray-400); /* Cor de fundo cinza */
+    height: auto; /* Altura automática para acomodar o conteúdo */
+    border-radius: 10px; /* Bordas arredondadas de 10px */
+    border: 1px solid var(--gray-300); /* Borda inicial visível */
+    transition: border-color 0.5s ease, background-color 0.5s ease; /* Transição suave para a cor da borda e do fundo */
+}
+
+/* Estilo para os itens completados */
+.taskItem.completed {
+    border-color: transparent; /* Remove a borda de forma suave */
+    background-color: var(--gray-500); /* Cor de fundo diferente para tarefas concluídas */
+}
+
+/* Contêiner para checkbox e texto alinhados à esquerda */
+.taskTextContainer {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+}
+
+/* Botão de excluir */
+.deleteButton {
+    padding: 5px 5px 1px 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    color: var(--gray-300); /* Cor do ícone de lixeira */
+    transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Efeito de hover para o botão de excluir */
+.deleteButton:hover {
+    background-color: var(--gray-400); /* Fundo ao passar o mouse */
+    color: var(--red-danger); /* Cor mais escura ao passar o mouse */
+}

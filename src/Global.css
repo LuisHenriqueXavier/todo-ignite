@@ -1,0 +1,38 @@
+/* Definição de variáveis globais para o tema de cores */
+:root {
+    --blue-dark: #1e6f9f; /* Azul escuro */
+    --blue: #4ea8de; /* Azul claro */
+    --purple-dark: #5e60ce; /* Roxo escuro */
+    --purple: #8284fa; /* Roxo claro */
+
+    --gray-700: #0d0d0d; /* Cinza muito escuro */
+    --gray-600: #1a1a1a; /* Cinza escuro */
+    --gray-500: #262626; /* Cinza médio-escuro */
+    --gray-400: #333333; /* Cinza médio */
+    --gray-300: #808080; /* Cinza claro */
+    --gray-200: #d9d9d9; /* Cinza muito claro */
+    --gray-100: #f2f2f2; /* Cinza claro quase branco */
+
+    --red-danger: #e25858; /* Vermelho para alertas ou perigo */
+}
+
+/* Reset básico para remover margens e garantir que padding não afete o layout */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding-left: 0; /* Remove o espaçamento padrão à esquerda */
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos nas dimensões totais dos elementos */
+}
+
+/* Estilo global para o corpo da página */
+body {
+    background: var(--gray-600); /* Define o fundo do corpo como cinza escuro */
+    color: var(--gray-300); /* Define a cor do texto como cinza claro */
+    -webkit-font-smoothing: antialiased; /* Suaviza o texto em navegadores WebKit para melhor legibilidade */
+}
+
+/* Estilo global para elementos de texto e inputs */
+body, input, textarea, button {
+    font-family: 'Inter', sans-serif; /* Define a fonte padrão como 'Inter' */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-size: 1rem; /* Define o tamanho padrão da fonte como 16px (1rem) */
+}

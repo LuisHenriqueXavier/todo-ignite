@@ -1,0 +1,13 @@
+.header {
+    background: var(--gray-700); /* Define a cor de fundo do cabeçalho usando a variável --gray-700 */
+    display: flex; /* Define o layout do cabeçalho como flexbox, permitindo o alinhamento dos itens filhos */
+    justify-content: center; /* Centraliza os itens filhos horizontalmente */
+    align-items: center; /* Alinha os itens filhos verticalmente ao centro */
+    padding: 4.5rem 0; /* Adiciona um padding de 4.5rem na parte superior e inferior, e 0 nas laterais */
+    height: 12.5rem; /* Define a altura do cabeçalho como 12.5rem */
+    width: 100%; /* Define a largura do cabeçalho como 100% do contêiner pai */
+}
+
+.header img {
+    height: 3rem; /* Define a altura da imagem dentro do cabeçalho como 3rem */
+}

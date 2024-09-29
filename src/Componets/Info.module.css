@@ -1,0 +1,51 @@
+/* Estilo para o contêiner de informações das tarefas */
+.taskInfo {
+    height: 50px; /* Define uma altura fixa para o contêiner */
+    width: 700px; /* Define a largura do contêiner */
+    margin-top: 64px; /* Adiciona um espaçamento superior */
+    display: flex; /* Utiliza o layout flexbox */
+    justify-content: space-between; /* Posiciona os elementos h1 e h2 nas extremidades opostas (esquerda e direita) */
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+    padding-bottom: 20px; /* Espaçamento na parte inferior */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo para o título h1 dentro do contêiner taskInfo */
+.taskInfo h1 {
+    font-size: 0.875rem; /* Ajusta o tamanho da fonte do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: var(--blue); /* Define a cor do texto como azul */
+}
+
+/* Estilo para o número de tarefas, exibido em um fundo circular */
+.taskNumber {
+    background-color: var(--gray-400); /* Define a cor de fundo (cinza) */
+    color: var(--gray-200); /* Define a cor do texto (cinza claro) */
+    border-radius: 10px; /* Bordas arredondadas para criar uma forma circular/oval */
+    padding: 2px 8px; /* Adiciona espaçamento interno ao número */
+    display: inline-flex; /* Exibe o conteúdo como flexbox para alinhamento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    font-weight: bold; /* Deixa o número em negrito */
+    margin-left: 5px; /* Adiciona um espaçamento à esquerda */
+}
+
+/* Estilo para o subtítulo h2 dentro do contêiner taskInfo */
+.taskInfo h2 {
+    font-size: 0.875rem; /* Ajusta o tamanho da fonte do subtítulo */
+    color: var(--purple); /* Define a cor do texto como roxo */
+}
+
+/* Estilo para o contêiner de uma tarefa individual */
+.task {
+    border-top: 1px solid; /* Adiciona uma borda superior à tarefa */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 64px 24px; /* Espaçamento interno (topo/botão e laterais) */
+    gap: 16px; /* Espaçamento entre os itens dentro do contêiner */
+    width: 100%; /* Define a largura total da tarefa */
+    height: 300px; /* Define uma altura fixa para a tarefa */
+    color: var(--gray-400); /* Define a cor do texto como cinza */
+    display: flex; /* Utiliza o layout flexbox */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
