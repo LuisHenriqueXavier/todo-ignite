@@ -1,7 +1,8 @@
+import './Global.css'; // Importa estilos globais para toda a aplicação
 import { Header } from './Componets/Header'; // Importa o componente Header que exibe o cabeçalho da aplicação
 import { TaskList } from './Componets/TaskList'; // Importa o componente TaskList que gerencia as tarefas
 import styles from './App.module.css'; // Importa estilos específicos para o componente App
-import './Global.css'; // Importa estilos globais para toda a aplicação
+
 
 // Definição do componente funcional App
 export function App() {

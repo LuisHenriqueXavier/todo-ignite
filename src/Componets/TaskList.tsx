@@ -3,6 +3,7 @@ import { NewTask } from './NewTask'; // Importando o componente para adicionar n
 import { Trash } from 'phosphor-react'; // Importando o ícone de lixeira da biblioteca Phosphor
 import styles from './TaskList.module.css'; // Importando os estilos CSS específicos para TaskList
 import { Info } from './Info'; // Importando o componente de informações de tarefas
+import Clipboard from '../assets/Clipboard.svg';
 
 // Interface que define o formato de uma tarefa individual
 interface Task {
@@ -56,6 +57,7 @@ export function TaskList() {
             {/* Verifica se a lista de tarefas está vazia */}
             {tasks.length === 0 ? (
                 <div className={styles.noTask}>
+                    <img src={Clipboard} alt='Clipboard' width={70} height={100} ></img>
                     <h1>Você ainda não tem tarefas cadastradas</h1>
                     <p>Crie tarefas e organize seus itens a fazer</p>
                 </div>

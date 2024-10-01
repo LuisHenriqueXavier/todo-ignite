@@ -16,6 +16,10 @@
     --red-danger: #e25858; /* Vermelho para alertas ou perigo */
 }
 
+:focus{
+    outline: 0;
+}
+
 /* Reset básico para remover margens e garantir que padding não afete o layout */
 * {
     margin: 0; /* Remove a margem padrão */
