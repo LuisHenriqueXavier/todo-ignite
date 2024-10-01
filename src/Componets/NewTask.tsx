@@ -32,7 +32,7 @@ export function NewTask({ onAddTask }: NewTaskProps) {
             />       
             {/* Botão de submissão do formulário */}
             <button type="submit" className={styles.submitButton}>
-                <h1>Criar</h1> {/* Texto do botão "Criar" */}
+                <span>Criar</span> {/* Texto do botão "Criar" */}
                 <PlusCircle size={20} /> {/* Ícone de adicionar tarefa */}
             </button>        
         </form>
